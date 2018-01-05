@@ -1,4 +1,3 @@
-// keyframes.ts Angular code
 import { keyframes, style } from '@angular/animations';
 
 //https://github.com/daneden/animate.css/tree/master/source

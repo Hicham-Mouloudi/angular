@@ -11,10 +11,14 @@ import { environment } from '../environments/environment';
 import { AppMaterialModule } from './app-material.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppLogoComponent } from './app-logo/app-logo.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppLogoComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
