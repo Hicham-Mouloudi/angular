@@ -1,18 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './modules/app-routing.module';
-
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { AppMaterialModule } from './modules/app-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
+import { AppLogoComponent } from './components/app-logo/app-logo.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 import { environment } from '../environments/environment';
-
-import { AppMaterialModule } from './modules/app-material.module';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppLogoComponent } from './app-logo/app-logo.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [

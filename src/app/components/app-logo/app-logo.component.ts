@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as tr from '../utils/triggers';
+import * as tr from '../../utils/triggers';
 
 @Component({
   selector: 'app-logo',
