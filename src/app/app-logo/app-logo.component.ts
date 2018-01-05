@@ -1,20 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, keyframes, animate, transition } from '@angular/animations';
-import * as kf from '../keyframes';
+import * as tr from '../utils/triggers';
 
 @Component({
   selector: 'app-logo',
   templateUrl: './app-logo.component.html',
   styleUrls: ['./app-logo.component.css'],
-  animations: [
-    trigger('cardAnimator', [
-      transition('* => swing', animate(1000, keyframes(kf.swing))),
-      transition('* => zoomIn', animate(1000, keyframes(kf.zoomIn)))
-    ])
-  ]
+  animations: tr.logoTrigger
 })
-export class AppLogoComponent {
 
+export class AppLogoComponent {
   animationState: string;
 
   constructor(){
