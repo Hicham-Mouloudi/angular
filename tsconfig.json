@@ -14,6 +14,13 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@myapp-services/*": ["app/services/*"],
+      "@myapp-components/*" : ["app/components/*"],
+      "@myapp-utils/*" : ["app/utils/*"],
+      "@myapp-modules/*" : ["app/modules/*"]
+    }
   }
 }
