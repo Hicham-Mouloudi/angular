@@ -10,12 +10,15 @@ import { environment } from '../environments/environment';
 
 import { AppMaterialModule } from './app-material.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AppMaterialModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
