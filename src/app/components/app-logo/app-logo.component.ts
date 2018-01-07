@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import * as tr from '@myapp-utils/triggers';
 
 @Component({
@@ -10,18 +12,25 @@ import * as tr from '@myapp-utils/triggers';
 
 export class AppLogoComponent {
   animationState: string;
+  clicked = false;
 
-  constructor(){
-    this.startAnimation("zoomIn");
+  constructor(public router : Router){
+    //this.startAnimation("zoomIn");
   }
 
   startAnimation(state) {
+    this.clicked = true;
     if (!this.animationState) {
       this.animationState = state;
     }
   }
+
   resetAnimationState() {
     this.animationState = '';
+    if (this.clicked) {
+      this.router.navigate(['/main']);
+      this.clicked = false;
+    }
   }
   
 }

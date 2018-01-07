@@ -11,12 +11,14 @@ import { AppLogoComponent } from '@myapp-components/app-logo/app-logo.component'
 import { ToolbarComponent } from '@myapp-components/toolbar/toolbar.component';
 
 import { environment } from '../environments/environment';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppLogoComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
