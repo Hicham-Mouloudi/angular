@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import * as tr from '@myapp-utils/triggers';
+import * as tr from '@learnApp-utils/triggers';
 
 @Component({
   selector: 'app-logo',

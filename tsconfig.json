@@ -17,10 +17,10 @@
     ],
     "baseUrl": "src",
     "paths": {
-      "@myapp-services/*": ["app/services/*"],
-      "@myapp-components/*" : ["app/components/*"],
-      "@myapp-utils/*" : ["app/utils/*"],
-      "@myapp-modules/*" : ["app/modules/*"]
+      "@learnApp-services/*": ["app/services/*"],
+      "@learnApp-components/*" : ["app/components/*"],
+      "@learnApp-utils/*" : ["app/utils/*"],
+      "@learnApp-modules/*" : ["app/modules/*"]
     }
   }
 }
